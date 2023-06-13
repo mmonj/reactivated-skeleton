@@ -5,9 +5,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     build:
       context: .
-      args:
-        UID: "1000"
-    user: "1000"
+    user: "${UID}"
     volumes:
       - ./:/app
     ports:

@@ -1,7 +1,7 @@
 FROM python:3.9.17-slim
 
 WORKDIR /app
-COPY . .
+COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
 RUN apt-get update -y && apt-get upgrade -y
@@ -13,6 +13,5 @@ RUN apt-get install nodejs -y
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-ARG UID
-RUN adduser -u ${UID} --disabled-password --gecos "" appuser && chown -R appuser /app
+RUN adduser --disabled-password --gecos "" appuser && chown -R appuser /app
 USER appuser
