@@ -1,5 +1,6 @@
 import React from "react";
 
+import {Context} from "@reactivated";
 import {Helmet} from "react-helmet-async";
 
 interface Props {
@@ -9,6 +10,8 @@ interface Props {
 }
 
 export const Layout = (props: Props) => {
+    const context = React.useContext(Context);
+    
     return (
         <>
             <Helmet>
@@ -29,12 +32,12 @@ export const Layout = (props: Props) => {
                     rel="stylesheet"
                     type="text/css"
                     href={`${context.STATIC_URL}dist/index.css`}
-                />
+                /> */}
                 <script
                     defer
                     crossOrigin="anonymous"
                     src={`${context.STATIC_URL}dist/index.js`}
-                /> */}
+                />
             </Helmet>
             <header>
                 <div>Header here</div>
