@@ -1,6 +1,7 @@
 import React from "react";
 
 import { templates } from "@reactivated";
+
 import { Layout } from "@client/components/Layout";
 
 export default (props: templates.TestPage) => {
