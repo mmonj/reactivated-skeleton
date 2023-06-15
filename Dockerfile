@@ -3,8 +3,11 @@ FROM nikolaik/python-nodejs:python3.9-nodejs16-slim
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-RUN apt-get update -y && apt-get upgrade -y
-RUN apt-get install git -y
+ARG ENV_TYPE
+RUN if [ "$ENV_TYPE" = "dev" ] ; then \
+	apt-get update -y \
+	&& apt-get install git -y \
+	; fi
 
 WORKDIR /app
 COPY pyproject.toml .

@@ -6,6 +6,8 @@ services:
     tty: true
     build:
       context: .
+      args:
+        ENV_TYPE: dev
     user: "${UID}"
     volumes:
       - ./:/app
