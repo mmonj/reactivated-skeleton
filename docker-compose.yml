@@ -2,7 +2,8 @@ version: "3"
 services:
   django-test:
     container_name: django-test
-    command: python manage.py runserver 0.0.0.0:8000
+    command: bash
+    tty: true
     build:
       context: .
     user: "${UID}"

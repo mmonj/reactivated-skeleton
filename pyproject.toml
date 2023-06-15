@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "reactivated-skeleton"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "reactivated_skeleton"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "4.0.1"
+reactivated = "^0.30.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "0.910"
+flake8 = "4.0.1"
+isort = "5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
