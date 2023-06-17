@@ -8,8 +8,10 @@ services:
       context: .
       args:
         ENV_TYPE: dev
-    user: "${UID}"
+        UID: 1000
+    user: "1000"
     volumes:
+      - /app/node_modules
       - ./:/app
     ports:
       - 9000:8000
