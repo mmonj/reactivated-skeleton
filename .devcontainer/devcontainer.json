@@ -1,0 +1,8 @@
+{
+    "name": "Ubuntu",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": "../.",
+        "args": {"ENV_TYPE": "dev", "UID": "1000" }
+    }
+}
