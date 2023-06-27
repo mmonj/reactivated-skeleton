@@ -25,16 +25,9 @@ export const Layout = (props: Props) => {
                     href={`${context.STATIC_URL}favicon.ico`}
                     type="image/x-icon"
                 />
-                <link
-                    rel="stylesheet"
-                    type="text/css"
-                    href={`${context.STATIC_URL}admin/css/fonts.css`}
-                />
-                <link
-                    rel="stylesheet"
-                    type="text/css"
-                    href={`${context.STATIC_URL}dist/index.css`}
-                /> */}
+                */}
+        <link rel="stylesheet" type="text/css" href={`${context.STATIC_URL}admin/css/fonts.css`} />
+        <link rel="stylesheet" type="text/css" href={`${context.STATIC_URL}dist/index.css`} />
         <script defer crossOrigin="anonymous" src={`${context.STATIC_URL}dist/index.js`} />
       </Helmet>
       <header>
