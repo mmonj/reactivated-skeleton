@@ -28,7 +28,6 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": ["9000:8000"],
 
-    // Use 'postCreateCommand' to run commands after the container is created.
     "overrideCommand": true,
-    "postAttachCommand": "npm install"
+    "onCreateCommand": "cp -r /app/node_modules /workspaces/"
 }
