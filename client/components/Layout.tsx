@@ -3,6 +3,8 @@ import React from "react";
 import { Context } from "@reactivated";
 import { Helmet } from "react-helmet-async";
 
+import "@client/styles/app.css";
+
 interface Props {
   title: string;
   children: React.ReactNode;
