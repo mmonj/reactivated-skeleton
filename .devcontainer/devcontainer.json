@@ -28,7 +28,6 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": ["9000:8000"],
 
-    "workspaceFolder": "/workspace-reactivated-skeleton",
     "overrideCommand": true,
-    "onCreateCommand": "cp -r /app/node_modules /workspace-reactivated-skeleton"
+    "onCreateCommand": "cp -r /app/node_modules /workspaces/reactivated-skeleton"
 }
