@@ -1,6 +1,9 @@
 {
-    "dependencies": {
-      "reactivated": "^0.30.1"
-    }
+  "scripts": {
+    "dev": "python manage.py runserver 0.0.0.0:8000"
+  },
+  "dependencies": {
+    "reactivated": "^0.30.1"
   }
+}
   
