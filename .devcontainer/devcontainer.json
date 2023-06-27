@@ -4,5 +4,24 @@
         "dockerfile": "../Dockerfile",
         "context": "../.",
         "args": {"ENV_TYPE": "dev", "UID": "1000" }
+    },
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            //"settings": {},
+            //"devPort": {},
+            // Specify which VS Code extensions to install (List of IDs)
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "matangover.mypy",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "njpwerner.autodocstring"
+            ]
+        }
     }
 }
