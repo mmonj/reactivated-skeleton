@@ -1,11 +1,11 @@
-FROM python:3.9.17-slim
+FROM python:3.9.13-slim
 WORKDIR /app
 
 RUN apt-get update -y
 RUN apt-get install curl -y
 
 # install Node.js
-ARG NODE_VERSION=16.20.0
+ARG NODE_VERSION=16.15.0
 ARG NODE_PACKAGE=node-v$NODE_VERSION-linux-x64
 ARG NODE_HOME=/opt/$NODE_PACKAGE
 
