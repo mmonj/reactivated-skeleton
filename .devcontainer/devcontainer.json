@@ -29,5 +29,5 @@
     "forwardPorts": ["9000:8000"],
 
     "overrideCommand": true,
-    "onCreateCommand": "cp -r /app/node_modules /workspaces/"
+    "onCreateCommand": "cp -r /app/node_modules /workspaces/reactivated-skeleton"
 }
