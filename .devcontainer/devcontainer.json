@@ -23,5 +23,11 @@
                 "njpwerner.autodocstring"
             ]
         }
-    }
+    },
+    
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": ["9000:8000"],
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "python manage.py runserver 0.0.0.0:8000"
 }
